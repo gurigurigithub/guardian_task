@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+}
+li {
+    list-style: none;
+}
+
+.global_nav{
+    height: 70px;
+    position: sticky;
+    top: 0;
+}
+
+.global_nav_ul {
+    display: flex;
+    justify-content: end;
+}
+
+.top_main {
+    padding-top: 70vh;
+}
+
+.feature_img {
+    background: center / cover no-repeat url("../images/mainImg.jpg");
+    height: 70vh;
+    width: 100vw;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.section_inner {
+}
+
+.section_inner img {
+    max-width: 100%;
+}
