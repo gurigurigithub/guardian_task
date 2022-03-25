@@ -41,9 +41,46 @@ li {
     z-index: -1;
 }
 
-.section_inner {
-}
-
 .section_inner img {
     max-width: 100%;
 }
+
+/* #message start */
+/* 共通 */
+.message_content {
+    display: flex;
+}
+.message_content .message_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(246,246,246);
+}
+
+/* PC・タブレット時 */
+@media (min-width: 768px){
+    .message_content:last-child {
+        flex-direction: row-reverse;
+    }
+    .message_content img {
+        width: 50%;
+    }
+    .message_content .message_text {
+        width: 50%;
+    }
+}
+
+/* モバイル時 */
+@media (max-width: 767px){
+    .message_content {
+        flex-direction: column;
+}
+    .message_content img {
+        width: 100%;
+    }
+    .message_content .message_text {
+        width: 100%;
+    }
+}
+/* #message end */
