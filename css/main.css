@@ -34,9 +34,21 @@ li {
     font-size: 30%;
 }
 
+/* #top start */
 .top_main {
     /* NOTE: feature_imgの高さ - global_navの高さ */
     padding-top: calc(70vh - 70px);
+}
+.feature_img_wrapper {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .feature_img {
     background: url("../images/mainImg.jpg");
@@ -44,14 +56,18 @@ li {
     background-repeat:no-repeat;
     background-size:cover;
     height: 70vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    z-index: -1;
+    justify-content: center;
 }
+/* PC・タブレット時 */
+@media (min-width: 768px){
+    .feature_img {
+        width: 85%;
+    }
+}
+/* #top end */
 
 .vision_text {
     display: flex;
