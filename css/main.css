@@ -23,6 +23,7 @@ li {
 .global_nav_ul {
     display: flex;
     justify-content: end;
+    margin: 0 16px;
 }
 .global_nav_item {
     color: #333333;
@@ -34,7 +35,8 @@ li {
 }
 
 .top_main {
-    padding-top: 70vh;
+    /* NOTE: feature_imgの高さ - global_navの高さ */
+    padding-top: calc(70vh - 70px);
 }
 .feature_img {
     background: url("../images/mainImg.jpg");
@@ -94,21 +96,6 @@ li {
     }
     .message_content .message_text {
         width: 100%;
-    }
-    .section_servise {
-        flex-direction: column;
-    }
-    .section_story {
-        flex-direction: column;
-    }
-    .section_access {
-        flex-direction: column;
-        height: 80%;
-        font-size: 8%;
-    }
-    footer {
-        flex-direction: column;
-        font-size: 8%;
     }
 }
 /* #message end */
