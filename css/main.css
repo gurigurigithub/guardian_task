@@ -2,6 +2,7 @@
 
 html {
     height: 100%;
+    line-height: 25px;
 }
 
 body {
@@ -23,16 +24,25 @@ li {
     display: flex;
     justify-content: end;
 }
+.global_nav_item {
+    color: #333333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 30px 10px;
+    font-size: 30%;
+}
 
 .top_main {
     padding-top: 70vh;
 }
-
 .feature_img {
-    background: center / cover no-repeat url("../images/mainImg.jpg");
+    background: url("../images/mainImg.jpg");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
     height: 70vh;
     width: 100vw;
-    object-fit: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,8 +51,11 @@ li {
     z-index: -1;
 }
 
-.section_inner img {
-    max-width: 100%;
+.vision_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
 }
 
 /* #message start */
@@ -75,15 +88,114 @@ li {
 @media (max-width: 767px){
     .message_content {
         flex-direction: column;
-}
+    }
     .message_content img {
         width: 100%;
     }
     .message_content .message_text {
         width: 100%;
     }
+    .section_servise {
+        flex-direction: column;
+    }
+    .section_story {
+        flex-direction: column;
+    }
+    .section_access {
+        flex-direction: column;
+        height: 80%;
+        font-size: 8%;
+    }
+    footer {
+        flex-direction: column;
+        font-size: 8%;
+    }
 }
 /* #message end */
+
+/* #service start */
+.section_servise {
+    display: flex;
+    text-align: center;
+    margin-top: 3%;
+}
+.servise_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* NOTE: レスポンシブのまん丸にするため */
+.serivice_box_img {
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    border-radius: 50%;
+}
+.serivice_box_img.img_1 {
+    background: url("../images/dips1.jpg");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.serivice_box_img.img_2 {
+    background: url("../images/dips1.jpg");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.serivice_box_img.img_3 {
+    background: url("../images/dips1.jpg");
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.servise_box p{
+    padding-top: 4px;
+    width: 80%;
+}
+
+/* PC・タブレット時 */
+@media (min-width: 768px){
+    .section_servise {
+        justify-content: space-around;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+/* モバイル時 */
+@media (max-width: 767px){
+    .section_servise {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* service end */
+
+/* #story start */
+.section_story {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 64%; */
+    height: 350px;
+    margin-top: 10%;
+    background: center / cover no-repeat url(../images/bgSec04.jpg);
+}
+.story {
+    margin: 5%;
+}
+.story h2 {
+    text-align: center;
+}
+/* モバイル時 */
+@media (max-width: 767px){
+    .section_story {
+        flex-direction: column;
+    }
+}
+/* #story end */
 
 /* #access start */
 .section_access {
@@ -116,3 +228,15 @@ li {
 }
 /* #access end */
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* モバイル時 */
+@media (max-width: 767px){
+    footer {
+        flex-direction: column;
+        font-size: 8%;
+    }
+}
