@@ -125,6 +125,7 @@ li {
     align-items: center;
 }
 /* NOTE: レスポンシブのまん丸にするため */
+/* 参考 https://jsfiddle.net/webtiki/MpXYr/2/ */
 .serivice_box_img {
     width: 80%;
     height: 0;
