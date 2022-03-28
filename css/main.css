@@ -84,3 +84,35 @@ li {
     }
 }
 /* #message end */
+
+/* #access start */
+.section_access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 64%; */
+    height: 400px;
+    margin: 10%;
+
+}
+.access {
+    margin: 5%;
+}
+
+.access tr th {
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+    height: 40px;
+    align-items: center;
+}
+/* モバイル時 */
+@media (max-width: 767px){
+    .section_access {
+        flex-direction: column;
+        height: 80%;
+        font-size: 8%;
+    }
+}
+/* #access end */
+
