@@ -99,6 +99,15 @@ li {
     align-items: center;
     margin: 5%;
 }
+/* モバイル時 */
+@media (max-width: 767px){
+    .vision_text {
+        padding: 15% 0;
+    }
+    .vision_text p{
+        width: 80%;
+    }
+}
 
 /* #message start */
 /* 共通 */
@@ -136,6 +145,11 @@ li {
     }
     .message_content .message_text {
         width: 100%;
+    }.message_text p {
+        width: 90%;
+    }
+    .message_text {
+        padding: 12% 0;
     }
 }
 /* #message end */
@@ -187,7 +201,7 @@ li {
     .section_servise {
         justify-content: space-around;
         margin-right: 15%;
-        margin-left: 15%;
+        margin: 7%;
     }
 }
 
@@ -196,6 +210,9 @@ li {
     .section_servise {
         flex-direction: column;
         align-items: center;
+    }
+    .servise_box {
+        padding-top: 12%;
     }
 }
 
@@ -210,6 +227,7 @@ li {
     height: 350px;
     margin-top: 10%;
     background: center / cover no-repeat url(../images/bgSec04.jpg);
+    color: white
 }
 .story {
     margin: 5%;
@@ -221,8 +239,10 @@ li {
 @media (max-width: 767px){
     .section_story {
         flex-direction: column;
+        height: fit-content;
     }
 }
+
 /* #story end */
 
 /* #access start */
@@ -235,6 +255,7 @@ li {
     margin: 10%;
 
 }
+
 .access {
     margin: 5%;
 }
@@ -246,12 +267,18 @@ li {
     height: 40px;
     align-items: center;
 }
+.access td a {
+    text-decoration: none;
+}
 /* モバイル時 */
 @media (max-width: 767px){
     .section_access {
         flex-direction: column;
         height: 80%;
         font-size: 8%;
+    }.access iframe {
+        width: 100%;
+        height: 250px;
     }
 }
 /* #access end */
@@ -260,6 +287,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.footer_http a {
+    text-decoration: none;
 }
 /* モバイル時 */
 @media (max-width: 767px){
